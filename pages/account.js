@@ -126,7 +126,7 @@ export default function AccountPage() {
                               {order.line_items.map((line) => {
                                 totalPrice += line.price_data.unit_amount;
                                 return (
-                                  <tr>
+                                  <tr key={line}>
                                     <ProductInfoCell>
                                       <ProductImageBox>
                                         <Link
